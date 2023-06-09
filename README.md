@@ -1,3 +1,6 @@
+# Clonar o descargar proyecto:
+Consumir la API “Challenge-Jr Backend”, Se deberá poder hacer el CRUD del maestro detalle de las pólizas y el CRUD de las coberturas.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
