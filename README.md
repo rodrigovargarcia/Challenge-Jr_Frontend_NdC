@@ -1,5 +1,5 @@
 # Clonar o descargar proyecto:
-Consumir la API “Challenge-Jr Backend”, Se deberá poder hacer el CRUD del maestro detalle de las pólizas y el CRUD de las coberturas.
+Consumir la API “Challenge-Jr Backend”, Se deberá poder hacer el CRUD del maestro detalle de las pólizas y el CRUD de las coberturas mediante una interfaz agradable y amigable.
 
 # Getting Started with Create React App
 
