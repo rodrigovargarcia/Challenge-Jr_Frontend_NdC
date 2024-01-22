@@ -26,6 +26,8 @@ const ModalPolizas = ({mostrarModal, setMostrarModal, guardarPoliza, editar, set
         } else {
             editarPoliza(poliza)
         }
+
+        setPoliza(modeloPoliza)
     }
 
 

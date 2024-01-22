@@ -13,8 +13,8 @@ const CoberturasCRUD = ({ dataCoberturas, setEditarCoberturas, mostrarModalCober
     <Table striped responsive>
         <thead>
             <tr>
-                <th>Cobertura</th>
-                <th>keseyo</th>
+                <th>Id</th>
+                <th>Nombre</th>
             </tr>
         </thead>
         <tbody>

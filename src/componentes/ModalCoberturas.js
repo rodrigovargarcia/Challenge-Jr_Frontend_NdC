@@ -26,6 +26,8 @@ const ModalCoberturas = ({mostrarModalCoberturas, setMostrarModalCoberturas, gua
         } else {
             editarCoberturas(cobertura)
         }
+
+        setCobertura(modeloCobertura)
     }
 
     useEffect(() => {

@@ -14,8 +14,8 @@ const PolizasCRUD = ({ data, setEditar, mostrarModal, setMostrarModal }) => {
         <Table striped responsive>
             <thead>
                 <tr>
-                    <th>Poliza</th>
-                    <th>keseyo</th>
+                    <th>Id</th>
+                    <th>Nombre</th>
                 </tr>
             </thead>
             <tbody>
