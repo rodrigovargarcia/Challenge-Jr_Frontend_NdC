@@ -33,8 +33,3 @@ Este proyecto tiene como objetivo consumir la API de Challenge-Jr_Backend y pode
 ## Conclusiones: 
 A pesar de no haber completado un CRUD para la entidad accesoria (PolizasCoberturas), se logró un avance significativo en el desarrollo del Challenge Frontend Junior. La aplicación permite interactuar de manera efectiva con la API, mostrar datos, y realizar operaciones CRUD básicas en las entidades Polizas y Coberturas por el momento, para luego poder configurar con mayor exactitud la clase maestro de pólizas. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
