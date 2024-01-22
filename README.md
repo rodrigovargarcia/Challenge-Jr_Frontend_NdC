@@ -1,70 +1,37 @@
-# Clonar o descargar proyecto:
-Consumir la API “Challenge-Jr Backend”, Se deberá poder hacer el CRUD del maestro detalle de las pólizas y el CRUD de las coberturas mediante una interfaz agradable y amigable.
+# Challenge Frontend Junior - Informe
 
-# Getting Started with Create React App
+## Objetivo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto tiene como objetivo consumir la API de Challenge-Jr_Backend y poder realizar un CRUD (Create, Read, Update, Delete) mediante una interfaz agradable y amigable.
 
-## Available Scripts
+## Pasos realizados
 
-In the project directory, you can run:
+### Clonación de repositorio:
+• Se clonó el repositorio del Challenge-Jr_Backend.
 
-### `npm start`
+### Configuración de Proxy y Dependencias:
+• Se realizaron configuraciones en los archivos package.json y package-lock.json para habilitar un proxy y permitir que la aplicación consuma la API desarrollada en el Challenge Backend Junior.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+• Se instaló Bootstrap para mejorar la presentación visual de la aplicación.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Configuración de la Aplicación React:
+• Se configuró el archivo App.json para estructurar la aplicación y definir su aspecto general.
 
-### `npm test`
+### Desarrollo de Componentes y Estructura Visual:
+• Se crearon componentes para visualizar y manipular las entidades Polizas y Coberturas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+• Se estructuró la interfaz de usuario con el objetivo de mostrar listas de pólizas y coberturas, así como permitir la creación, edición y eliminación de entidades.
 
-### `npm run build`
+### Implementación de Solicitudes HTTP y CRUD:
+• Se utilizaron métodos **fetch** para realizar solicitudes HTTP y obtener datos de la API.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+• Se desarrollaron funciones que permiten realizar operaciones CRUD en las entidades Polizas y Coberturas, incluyendo creación, edición y eliminación.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Validación de Eliminación:
+• Se implementó una validación mediante *window.confirm* para prevenir eliminaciones accidentales.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
+## Conclusiones: 
+A pesar de no haber completado un CRUD para la entidad accesoria (PolizasCoberturas), se logró un avance significativo en el desarrollo del Challenge Frontend Junior. La aplicación permite interactuar de manera efectiva con la API, mostrar datos, y realizar operaciones CRUD básicas en las entidades Polizas y Coberturas por el momento, para luego poder configurar con mayor exactitud la clase maestro de pólizas. 
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
