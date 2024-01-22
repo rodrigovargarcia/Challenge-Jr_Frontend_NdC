@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Table, Button } from "reactstrap"
 
 
-const PolizasCRUD = ({ data, setEditar, mostrarModal, setMostrarModal }) => {
+const PolizasCRUD = ({ data, setEditar, mostrarModal, setMostrarModal, eliminarPoliza }) => {
 
     const enviarDatos = (poliza) =>{
         setEditar(poliza)
@@ -32,7 +32,7 @@ const PolizasCRUD = ({ data, setEditar, mostrarModal, setMostrarModal }) => {
                                     <td>{ item.nombre }</td>
                                     <td>
                                         <Button color="success" size="sm" className="me-2" onClick={() => enviarDatos(item)}>Editar</Button>
-                                        <Button color="danger" size="sm" className="me-2">Eliminar</Button>
+                                        <Button color="danger" size="sm" className="me-2" onClick={() => eliminarPoliza(item)}>Eliminar</Button>
                                     </td>
                                 </tr>
 

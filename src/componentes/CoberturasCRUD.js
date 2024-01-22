@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Table, Button } from "reactstrap"
 
-const CoberturasCRUD = ({ dataCoberturas, setEditarCoberturas, mostrarModalCoberturas, setMostrarModalCoberturas }) => {
+const CoberturasCRUD = ({ dataCoberturas, setEditarCoberturas, mostrarModalCoberturas, setMostrarModalCoberturas, eliminarCobertura }) => {
 
     const enviarDatosCoberturas = (cobertura) => {
         console.log("vamos a ver que datos tienes", cobertura)
@@ -31,7 +31,7 @@ const CoberturasCRUD = ({ dataCoberturas, setEditarCoberturas, mostrarModalCober
                                 <td>{ item.nombre }</td>
                                 <td>
                                     <Button color="success" size="sm" className="me-2" onClick={() => enviarDatosCoberturas(item)}>Editar</Button>
-                                    <Button color="danger" size="sm" className="me-2">Eliminar</Button>
+                                    <Button color="danger" size="sm" className="me-2" onClick={() => eliminarCobertura(item)}>Eliminar</Button>
                                 </td>
                             </tr>
 

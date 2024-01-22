@@ -126,6 +126,53 @@ function App() {
 };
 
 
+
+const eliminarPoliza = async (poliza) => {
+
+    var respuesta = window.confirm("¿Desea eliminar la poliza?")
+
+    if(!respuesta){
+        return;
+    }
+
+    if (poliza && poliza.id !== undefined && poliza.id !== null) {
+        const response = await fetch(`api/Polizas/${poliza.id}`, {
+            method: 'DELETE',            
+        });
+
+        if (response.ok) {
+            console.log("poliza eliminada correctamente");
+            mostrarPolizas();
+        }
+    } else {
+        console.error("idPoliza en poliza es undefined o null");
+    }
+};
+
+
+const eliminarCobertura = async (cobertura) => {
+
+  var respuesta = window.confirm("¿Desea eliminar la cobertura?")
+
+  if(!respuesta){
+      return;
+  }
+
+  if (cobertura && cobertura.id !== undefined && cobertura.id !== null) {
+      const response = await fetch(`api/Coberturas/${cobertura.id}`, {
+          method: 'DELETE',            
+      });
+
+      if (response.ok) {
+          console.log("cobertura eliminada correctamente");
+          mostrarCoberturas();
+      }
+  } else {
+      console.error("idCobertura en cobertura es undefined o null");
+  }
+};
+
+
   return (
     <Container>
       <Row className="mt-5">
@@ -137,7 +184,7 @@ function App() {
             <CardBody>
               <Button size="sm" color="success" onClick={ () => setMostrarModal(!mostrarModal) }>Nueva Póliza</Button>
               <hr></hr>
-              <PolizasCRUD data={ polizas } setEditar={ setEditar } mostrarModal={ mostrarModal } setMostrarModal={ setMostrarModal }/>
+              <PolizasCRUD data={ polizas } setEditar={ setEditar } mostrarModal={ mostrarModal } setMostrarModal={ setMostrarModal } eliminarPoliza={eliminarPoliza}/>
             </CardBody>
           </Card>
         </Col>
@@ -151,7 +198,7 @@ function App() {
             <CardBody>
               <Button size="sm" color="success" onClick={ () => setMostrarModalCoberturas(!mostrarModalCoberturas) }>Nueva Cobertura</Button>
               <hr></hr>
-              <CoberturasCRUD dataCoberturas={ coberturas } setEditarCoberturas={ setEditarCoberturas } setMostrarModalCoberturas={ setMostrarModalCoberturas } />
+              <CoberturasCRUD dataCoberturas={ coberturas } setEditarCoberturas={ setEditarCoberturas } setMostrarModalCoberturas={ setMostrarModalCoberturas } eliminarCobertura={eliminarCobertura}/>
             </CardBody>
           </Card>
         </Col>
