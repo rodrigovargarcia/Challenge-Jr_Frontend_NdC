@@ -3,7 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Table, Button } from "reactstrap"
 
 
-const PolizasCRUD = ({ data }) => {
+const PolizasCRUD = ({ data, setEditar, mostrarModal, setMostrarModal }) => {
+
+    const enviarDatos = (poliza) =>{
+        setEditar(poliza)
+        setMostrarModal(!mostrarModal)
+    }
+
     return (
         <Table striped responsive>
             <thead>
@@ -25,7 +31,8 @@ const PolizasCRUD = ({ data }) => {
                                     <td>{ item.id }</td>
                                     <td>{ item.nombre }</td>
                                     <td>
-                                        <Button color="primary" size="sm" className="me-2">Poliza</Button>
+                                        <Button color="success" size="sm" className="me-2" onClick={() => enviarDatos(item)}>Editar</Button>
+                                        <Button color="danger" size="sm" className="me-2">Eliminar</Button>
                                     </td>
                                 </tr>
 
